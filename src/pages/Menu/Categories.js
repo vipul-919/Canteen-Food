@@ -11,8 +11,7 @@ const Categories = ({ categories, filterItems }) => {
             type="button"
             className="filter-btn"
             key={index}
-            onClick={() => filterItems(category)}
-          >
+            onClick={() => filterItems(category)}>
             {category}
           </button>
         );

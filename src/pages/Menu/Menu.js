@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import img2 from "../../assets/menu/our-menu-bg.jpg";
 import Layout from '../../components/Layouts/Layout';
 import Categories from './Categories';
 import items from './Data';
@@ -29,11 +30,18 @@ function App() {
           </div>
           <Categories categories={categories} filterItems={filterItems} />
           <Menu items={menuItems} />
-          
         </section>
       </main>
-      </Layout>
+      <div className="about-us-image" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100vh', zIndex: -1 , objectFit: 'cover'}}>
+        <img
+          src={img2}
+          alt="Canteen"
+          style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+        />
+      </div>
+    </Layout>
   );
 }
 
 export default App;
+
