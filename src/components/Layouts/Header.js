@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/logo/logo.png";
 import "../../styles/HeaderStyle.css";
 
 const Header = ({ setLoginUser }) => {
@@ -23,17 +22,7 @@ const Header = ({ setLoginUser }) => {
         className={`${nav ? "sticky" : ""}`}
       >
         <Container>
-          <Navbar.Brand href="#home">
-            <Link to="/home" className="logo">
-            <img
-            src={Logo}
-            alt="Logo"
-            className="img-fluid"
-            style={{ zIndex: "-1" }}
-          />
           
-            </Link>
-          </Navbar.Brand>
          
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
