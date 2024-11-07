@@ -1,15 +1,10 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import Image1 from "../../assets/menu/burger-11.jpg";
 import Image2 from "../../assets/menu/burger-12.jpg";
 import Image3 from "../../assets/menu/burger-13.jpg";
 import Image4 from "../../assets/menu/burger-14.jpg";
-import Image5 from "../../assets/menu/burger-15.jpg";
-import Image6 from "../../assets/menu/burger-16.jpg";
-import Image7 from "../../assets/menu/burger-17.jpg";
-import Image8 from "../../assets/menu/burger-18.jpg";
 import Cards from "../../components/Layouts/Cards";
-import { Link } from "react-router-dom";
 
 // Mock Data Cards
 const mockData = [
@@ -45,38 +40,7 @@ const mockData = [
     rating: 3.5,
     price: 99.25,
   },
-  {
-    id: "0005",
-    image: Image5,
-    title: "Double Burger",
-    paragraph: "2 patties, cheddar cheese, mustard, pickles, tomatoes",
-    rating: 3.0,
-    price: 59.25,
-  },
-  {
-    id: "0006",
-    image: Image6,
-    title: "Turkey Burger",
-    paragraph: "Turkey, cheddar cheese, onion, lettuce, tomatoes, pickles",
-    rating: 3,
-    price: 79.18,
-  },
-  {
-    id: "0007",
-    image: Image7,
-    title: "Smokey House",
-    paragraph: "patty, cheddar cheese, onion, lettuce, tomatoes, pickles",
-    rating: 2.5,
-    price: 99.19,
-  },
-  {
-    id: "0008",
-    image: Image8,
-    title: "Classic Burger",
-    paragraph: "cheddar cheese, ketchup, mustard, pickles, onion",
-    rating: 2.0,
-    price: 89.12,
-  },
+ 
   // Add more mock data objects as needed
 ];
 

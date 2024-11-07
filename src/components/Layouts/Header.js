@@ -22,40 +22,43 @@ const Header = ({ setLoginUser }) => {
         expand="lg"
         className={`${nav ? "sticky" : ""}`}
       >
-        <div className="homepage">
-          <div className="button" onClick={() => setLoginUser({})}>Logout</div>
-        </div>
         <Container>
           <Navbar.Brand href="#home">
-            <Link to="/" className="logo">
-              <img src={Logo} alt="Logo" className="img-fluid" />
+            <Link to="/home" className="logo">
+            <img
+            src={Logo}
+            alt="Logo"
+            className="img-fluid"
+            style={{ zIndex: "-1" }}
+          />
+          
             </Link>
           </Navbar.Brand>
+         
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
-              <div>
-                <input
-                  type="search" 
-                  name="search"
-                  id=""
-                  placeholder="Search here"
-                  autoComplete="off"
-                  className="p0 border border-gray-400 text-sm rounded-lg outline-none w-full lg:w-[25vw]"
-                />
-              </div>
-              <Nav.Link as={Link} to="/">Home</Nav.Link>
+              <Nav.Link as={Link} to="/home">Home</Nav.Link>
               <Nav.Link as={Link} to="/about">About</Nav.Link>
               <Nav.Link as={Link} to="/menu">Our Menu</Nav.Link>
-              <Nav.Link as={Link} to="/shop">Shop</Nav.Link>
-              <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
               <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
-              <Nav.Link as={Link} to="/">
-                <div className="cart">
-                  <i className="bi bi-bag fs-5"></i>
-                  <em className="roundpoint">2</em>
-                </div>
-              </Nav.Link>
+              <Nav.Link as={Link} to="/login"
+                style={{
+                background: "red",
+                border: "1px solid red", // Adding border for clarity
+                color: "white",
+                fontSize: "1.5rem", // Increasing font size to 1.2rem
+                padding: "0.3rem",
+                margin: "-0.5rem 25px", // Assuming "px" as the unit for margin
+                borderRadius: "8px",
+                outline: "none",
+                cursor: "pointer",
+                fontWeight: "bold"
+              }}
+            >
+              Logout
+            </Nav.Link>
+            
             </Nav>
           </Navbar.Collapse>
         </Container>

@@ -1,9 +1,8 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Pizza from "../../assets/about/pizza.png";
 import Salad from "../../assets/about/salad.png";
-import Delivery from "../../assets/about/delivery-bike.png";
 
 // Mock Data Cards
 const mockData = [
@@ -32,7 +31,7 @@ function Section2() {
               <p>
               "Dive into our full menu and embark on a culinary adventure that transcends canteen expectations. View our complete offerings and let your taste buds anticipate the extraordinary."
               </p>
-              <Link to="/" className="btn order_now btn_red">
+              <Link to="/menu" className="btn order_now btn_red">
                 Explore Full Menu
               </Link>
             </Col>
